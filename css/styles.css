@@ -42,7 +42,14 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.suptitle-dark-theme {
   color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-light-theme {
+  color: #303030;
 }
 
 .section-description {
@@ -50,7 +57,32 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  /* color: #9da4bd; */
+}
+
+.section-description-dark-theme {
   color: #9da4bd;
+}
+
+.section-description-light-theme {
+  color: #555555;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  /* color: #303030; */
+}
+
+.title-dark-theme {
+  color: #ffffff;
+}
+
+.title-light-theme {
+  color: #303030;
 }
 
 /* =========== END COMPONENTNS ===========*/
@@ -87,3 +119,99 @@ body {
   /* color: #ffffff; */
 }
 /* =========== END HERO ===========*/
+
+/* =========== ABOUT ===========*/
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+/* =========== END ABOUT ===========*/
+
+/* =========== SERVICES ===========*/
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* =========== END SERVICES ===========*/
+
+/* =========== ADVANTAGES ===========*/
+.advantages-list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+/* =========== END ADVANTAGES ===========*/
+
+/* =========== MASTERS ===========*/
+.masters-list-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* =========== END MASTERS ===========*/
+
+/* =========== GALLERY ===========*/
+
+/* =========== END GALLERY ===========*/
+
+/* =========== CONTACT FORM ===========*/
+
+/* =========== END CONTACT FORM ===========*/
+
+/* =========== CONTACT INFORMATION ===========*/
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* =========== END CONTACT INFORMATION ===========*/
+
+/* =========== FOOTER ===========*/
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* =========== END FOOTER ===========*/
