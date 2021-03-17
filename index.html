@@ -10,53 +10,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="navigation">
-            <a class="logo" href="">
-                <img class="logo-img" src="./images/header/logo.svg" alt="логотип барбершопа" width="68" height="54">
-            </a>
-            <ul class="navigation-list">
-                <li class="navigation-list-item">
-                    <a class="navigation-list-link" href="#">О нас</a>
-                </li>
-                <li class="navigation-list-item">
-                    <a class="navigation-list-link" href="#">Услуги и цены</a>
-                </li>
-                <li class="navigation-list-item">
-                    <a class="navigation-list-link" href="#">Мастера</a>
-                </li>
-                <li class="navigation-list-item">
-                    <a class="navigation-list-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo" href="">
+                    <img class="logo-img" src="./images/header/logo.svg" alt="логотип барбершопа" width="68"
+                        height="54">
+                </a>
+                <ul class="navigation-list list">
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link link" href="#">О нас</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link link" href="#">Услуги и цены</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link link" href="#">Мастера</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="modal-btn" type="button">онлайн-запись</button>
+
+        </div>
     </header>
     <main>
         <!-- HERO -->
         <section class="hero">
-            <div class="hero-left-side">
-                <ul class="social-links-list">
-                    <li class="social-links-list-item">
-                        <a class="social-links-list-link" href="" lang="en">Instagram</a>
-                    </li>
-                    <li class="social-links-list-item">
-                        <a class="social-links-list-link" href="" lang="en">Youtube</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hero-right-side">
-                <p class="suptitle suptitle-dark-theme" lang="en">A hair salon for men in Kyiv</p>
-                <h1 class="title" lang="en">BarberShop</h1>
-                <p class="section-description section-description-dark-theme">Мы эксперты в модных мужских стрижках.
-                    Работаем быстро, осторожно и со
-                    вкусом.
-                </p>
+            <div class="container">
+                <div class="hero-left-side">
+                    <ul class="social-links-list">
+                        <li class="social-links-list-item">
+                            <a class="social-links-list-link" href="" lang="en">Instagram</a>
+                        </li>
+                        <li class="social-links-list-item">
+                            <a class="social-links-list-link" href="" lang="en">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-right-side">
+                    <p class="suptitle suptitle-dark-theme" lang="en">A hair salon for men in Kyiv</p>
+                    <h1 class="title" lang="en">BarberShop</h1>
+                    <p class="section-description section-description-dark-theme">Мы эксперты в модных мужских стрижках.
+                        Работаем быстро, осторожно и со
+                        вкусом.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- ABOUT US -->
@@ -220,7 +229,7 @@
         </section>
         <section class="contact-information">
             <h2 class="title">Контакты</h2>
-            <address>
+            <address class="address">
                 <ul class="contact-list">
                     <li class="contact-list-item">
                         <a class="contact-list-link" href="https://goo.gl/maps/QMAQyDxYvGaeSHiy8" target="_blank">ул.
