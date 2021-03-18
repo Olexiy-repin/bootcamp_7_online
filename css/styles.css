@@ -48,8 +48,29 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* =========== COMPONENTNS ===========*/
 .modal-btn {
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  cursor: pointer;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
@@ -62,6 +83,14 @@ body {
 .modal-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+
+.social-links-list {
+  display: flex;
+}
+
+.social-links-list-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .social-links-list-link {
@@ -81,6 +110,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .suptitle-dark-theme {
@@ -181,28 +211,107 @@ body {
 /* =========== END HEADER ===========*/
 
 /* =========== HERO ===========*/
+.hero .container {
+  display: flex;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  background-color: #303030;
+}
+
+.hero-right-side .section-description {
+  width: 400px;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-
+  margin-bottom: 20px;
   /* color: #ffffff; */
 }
 /* =========== END HERO ===========*/
 
 /* =========== ABOUT ===========*/
+.about .container {
+  display: flex;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .section-description {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-left-side {
+  margin-right: 32px;
+}
+
+.about-right-side {
+  padding-left: 32px;
+}
+
 .about-text {
+  width: 480px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 /* =========== END ABOUT ===========*/
 
 /* =========== SERVICES ===========*/
+.services .title {
+  margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #000000;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-weight: 400;
@@ -214,6 +323,51 @@ body {
 /* =========== END SERVICES ===========*/
 
 /* =========== ADVANTAGES ===========*/
+.advantages .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages .title {
+  margin-bottom: 20px;
+}
+
+.advantages-right-side .section-description {
+  width: 464px;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  width: calc(100% / 2 - 15px);
+}
+
+.advantages-left-side {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 370px;
+}
+
+.advantages-list-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px 20px;
+  border: 1px solid #000;
+}
+
+.advantages-list-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.advantages-list-item:nth-child(odd) {
+  margin-bottom: 30px;
+}
+
 .advantages-list-count {
   font-weight: 700;
   font-size: 42px;
@@ -233,6 +387,29 @@ body {
 /* =========== END ADVANTAGES ===========*/
 
 /* =========== MASTERS ===========*/
+.masters .title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.masters-list-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.masters-list-content-wrapper {
+  padding-top: 30px;
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+
 .masters-list-title {
   font-weight: 400;
   font-size: 18px;
@@ -240,6 +417,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .masters-list-position {
@@ -253,7 +431,22 @@ body {
 /* =========== END MASTERS ===========*/
 
 /* =========== GALLERY ===========*/
+.gallery .suptitle {
+  margin-bottom: 44px;
+}
 
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.gallery-list-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* =========== END GALLERY ===========*/
 
 /* =========== CONTACT FORM ===========*/
@@ -279,6 +472,17 @@ body {
 /* =========== END CONTACT INFORMATION ===========*/
 
 /* =========== FOOTER ===========*/
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
