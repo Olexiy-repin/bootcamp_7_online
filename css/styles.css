@@ -87,6 +87,17 @@ body {
 
 .social-links-list {
   display: flex;
+  align-items: center;
+}
+
+.social-links-list::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  flex-shrink: 0;
+  margin-right: 40px;
 }
 
 .social-links-list-item:not(:last-child) {
@@ -106,6 +117,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
@@ -113,12 +126,28 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
 .suptitle-dark-theme {
   color: rgba(157, 164, 189, 0.6);
 }
 
+.suptitle-dark-theme::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
 .suptitle-light-theme {
   color: #303030;
+}
+
+.suptitle-light-theme::before {
+  background-color: #303030;
 }
 
 .section-description {
@@ -152,6 +181,36 @@ body {
 
 .title-light-theme {
   color: #303030;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #000000;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-color);
 }
 
 /* =========== END COMPONENTNS ===========*/
@@ -225,6 +284,13 @@ body {
   padding-top: 272px;
   padding-bottom: 206px;
   background-color: #303030;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-right-side .section-description {
@@ -238,7 +304,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 /* =========== END HERO ===========*/
 
@@ -387,6 +453,10 @@ body {
 /* =========== END ADVANTAGES ===========*/
 
 /* =========== MASTERS ===========*/
+.masters {
+  background-color: #f7f7f7;
+}
+
 .masters .title {
   margin-bottom: 44px;
 }
@@ -406,8 +476,8 @@ body {
 
 .masters-list-content-wrapper {
   padding-top: 30px;
-  border: 1px solid #cccccc;
-  border-top: none;
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .masters-list-title {
@@ -427,6 +497,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 /* =========== END MASTERS ===========*/
 
