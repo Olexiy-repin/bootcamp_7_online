@@ -21,6 +21,10 @@
   flex-wrap: wrap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -265,6 +269,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: background-color 250ms linear;
 }
 
 .social-list-link:hover, .social-list-link:focus {
@@ -274,6 +279,7 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 
 .social-list-link:hover .social-list-icon,
