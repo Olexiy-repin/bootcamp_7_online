@@ -4,8 +4,7 @@
 }
 
 .masters-list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flex-container;
   margin-left: -30px;
   margin-top: -30px;
 }

@@ -10,8 +10,7 @@
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flex-container;
   align-items: flex-end;
   width: 370px;
 }

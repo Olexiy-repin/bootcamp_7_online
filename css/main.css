@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+.advantages-list, .masters-list, .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 h1,
 h2,
 h3,
@@ -189,8 +194,8 @@ body {
 }
 
 .section-description {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
@@ -217,8 +222,8 @@ body {
 
 .title {
   font-family: var(--secondary-font);
-  font-weight: 700;
   font-size: 42px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
@@ -559,8 +564,6 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
   width: 370px;
 }
@@ -601,8 +604,6 @@ body {
 }
 
 .masters-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -642,8 +643,6 @@ body {
 /* =========== END MASTERS ===========*/
 /* =========== GALLERY ===========*/
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
