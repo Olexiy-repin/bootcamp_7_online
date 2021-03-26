@@ -1,0 +1,99 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: tomato;
+  /* background-image: url("https://picsum.photos/200/300"); */
+}
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта в браузере 400px или больше, применять правила внутри */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Когда ширина вьюпорта в браузере 768px или больше, применять правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Когда ширина вьюпорта в браузере 1200px или больше, применять правила внутри */
+/* @media (min-width: 1200px) {
+  body {
+    background-color: saddlebrown;
+  }
+} */
+
+/* Когда ширина вьюпорта в браузере от 0 и до 768px, применять правила внутри */
+/* @media (max-width: 768px) {
+  body {
+    background-color: orange;
+  }
+} */
+
+/* Когда ширина вьюпорта в браузере от 0 и до 600px, применять правила внутри */
+/* @media (max-width: 600px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* ========== AND ========== */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: thistle;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+/* ========== ORIENTATION ========== */
+/* @media screen and (orientation: portrait) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
