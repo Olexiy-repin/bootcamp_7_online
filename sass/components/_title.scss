@@ -1,23 +1,23 @@
 .title {
   font-family: var(--secondary-font);
-  @include font(42px, 700, 49px);
+  @include font(28px, 700, 33px);
   letter-spacing: 0.05em;
 
   .about & {
     margin-bottom: 20px;
   }
 
-  .advantages & {
-    margin-bottom: 20px;
-  }
+  // .advantages & {
+  //   margin-bottom: 20px;
+  // }
 
-  .masters & {
-    margin-bottom: 44px;
-  }
+  // .masters & {
+  //   margin-bottom: 44px;
+  // }
 
-  .services & {
-    margin-bottom: 44px;
-  }
+  // .services & {
+  //   margin-bottom: 44px;
+  // }
 }
 
 .title-dark-theme {
@@ -26,4 +26,10 @@
 
 .title-light-theme {
   color: #303030;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    @include font(42px, 700, 49px);
+  }
 }

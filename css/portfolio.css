@@ -79,6 +79,9 @@ body {
   .container {
     width: 720px;
   }
+  .about .container {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
