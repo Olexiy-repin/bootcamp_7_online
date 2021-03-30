@@ -138,8 +138,10 @@ body {
   margin: 0 auto;
 }
 
-.header .modal-btn {
-  display: none;
+@media screen and (max-width: 767px) {
+  .header .modal-btn {
+    display: none;
+  }
 }
 
 .modal-btn-dark-theme {
@@ -322,12 +324,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 94%;
+  max-width: 450px;
+  height: 94%;
+  max-height: 610px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  overflow-y: scroll;
 }
 
 .modal-close-btn {
@@ -424,6 +429,13 @@ body {
   border: 4px solid #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 580px;
+  }
+}
+
 /* =========== END BACKDROP ===========*/
 /* =========== END COMPONENTNS ===========*/
 /* =========== HEADER ===========*/
@@ -462,6 +474,7 @@ body {
     background-color: bisque;
     padding: 48px 40px;
     transition: all 250ms linear;
+    overflow-y: scroll;
     transform: translateX(-50%) translateY(-100%);
   }
   .is-open {
